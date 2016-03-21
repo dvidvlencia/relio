@@ -1,5 +1,50 @@
-<html>
-    <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test for plugin</title>
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="relio.js"></script>
+    <script src="proyecto.js"></script>
+    <style>
+        main{
+            width: 50%;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>test for plugin</h1>
+        <section>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam assumenda ab et magnam quaerat voluptatem commodi, harum molestias veniam quia fuga, reprehenderit laboriosam modi nihil recusandae, nam fugiat ea quasi?
+            </p>
+            <button id="test" data-relio="">
+                transition 1
+            </button>
+        </section>
+        <section>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam assumenda ab et magnam quaerat voluptatem commodi, harum molestias veniam quia fuga, reprehenderit laboriosam modi nihil recusandae, nam fugiat ea quasi?
+            </p>
+            <button onclick="$(this).right()">
+                transition 2
+            </button>
+        </section>
+        <br>
+        <div>
+            <a onclick="$(this).right()">
+                transition 3
+            </a>    
+        </div>
+        <br>
+        <div>
+            <a onclick="$(this).left()">
+                transition 4
+            </a>    
+        </div>
         
-    </head>
+    </main
+</body>
 </html>
