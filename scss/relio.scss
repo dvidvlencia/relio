@@ -4,9 +4,21 @@
 */
 
 body{
-    background-color: #4183D7;
+    width: 100%;
+    height: 400px;
+    background-color: gray;
 }
 main{
     width: 50%;
     margin: 0 auto;
+}
+/*clases para agregar los efectos (primeros test)*/
+.RelioRight{
+    
+}
+.testTag{
+    background-color: #674172;
+}
+.testTagA{
+    background-color: teal;
 }

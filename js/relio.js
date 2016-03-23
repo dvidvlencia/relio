@@ -25,8 +25,18 @@ function filterTag(selector, effect){
     console.log(effect);
     var nameSelector = selector[0]['tagName'];
     if(nameSelector === 'A'){
-        alert('Tag a - '+nameSelector);
+        $("body").removeAttr("class");
+        /*capturamos el link destino*/
+        var href = selector.attr('href');
+        event.preventDefault();
+        $("body").addClass("testTagA");
+//        $("body").hide("slide", { direction: "left" }, 1000);
+//        alert(href);
     } else {
-        alert('Nombre del selector - '+nameSelector);
+        $("body").removeAttr("class");
+        var href = selector.attr('data-link');
+        $("body").addClass("testTag");
+//        $("body").animate({left: '-100%', opacity: '0.5'});
+//        alert(href);
     }
 }
