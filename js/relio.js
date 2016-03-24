@@ -35,8 +35,18 @@ function filterTag(selector, effect){
     } else {
         $("body").removeAttr("class");
         var href = selector.attr('data-link');
-        $("body").addClass("testTag");
-//        $("body").animate({left: '-100%', opacity: '0.5'});
-//        alert(href);
+        $("body").animate(
+                {
+                    left: '-100%',
+                    opacity: '0.5'
+                },
+                {
+                    easeing: 'easeInOutBounce',
+                    duration: 900, 
+                    complete: function(){
+//                        alert('effect end, ' + href);
+                    }
+                }
+            );
     }
 }
