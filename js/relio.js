@@ -1,5 +1,4 @@
 (function ($) {
-    $("body").css("position","relative");
     $.fn.extend({
         
         right: function (){
@@ -36,6 +35,7 @@ debe captar el seletor y el nombre del efecto para poder ejecutar el transition
 //    return variable;
 //}
 function filterTag(selector, options){
+    $("body").css({"position":"relative", "overflow": "hidden"});
     var nameSelector = selector[0]['tagName'];
     if(nameSelector === 'A'){
         var value = options.valueDirection;
