@@ -1,4 +1,5 @@
 (function ($) {
+    $("body").css("position","relative");
     $.fn.extend({
         
         right: function (){
